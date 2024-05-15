@@ -20,6 +20,69 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  padding: 8px;
+  margin: 100px;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+}
+
+.right{
+  display: flex;
+  flex: 10;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: auto;
+}
+
+.top-line {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  margin: 8px;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center; 
+  margin: 10px;
+}
+.header {
+  font-weight: 700;
+  display: flex;
+  flex: 10;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 10; 
+  flex-shrink: 10;
+  flex-basis: auto;
+}
+
+.close-button {
+  font-weight: 700;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-between;
+  align-items: flex-end; 
+  margin: 8px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 
 .icon {
@@ -60,10 +123,18 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  align-self: flex-start;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.bottom-line{
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  gap: 10px;
 }
